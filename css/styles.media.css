@@ -1,0 +1,87 @@
+@media screen and (min-width: 438px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dpp) {
+    .main-hero {
+      padding: 188px 0;
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/office-tab-2x.jpg);
+    }
+  }
+
+  /*.header-list {
+    margin-right: auto;
+    display: flex;
+    gap: 40px;
+  }*/
+
+  /*.address-nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }*/
+
+  .description-icon-list {
+    display: flex;
+    align-items: center;
+    background-color: var(--button-portfolio-background-color);
+    justify-content: center;
+    border-radius: 4px;
+    height: 112px;
+    margin-bottom: 8px;
+  }
+
+  .description-icon {
+    fill: var(--header-color);
+  }
+}
+
+@media screen and (max-width: 1158px) {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dpp) {
+    .main-hero {
+      padding: 188px 0;
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/office-desk-2x.jpg);
+    }
+  }
+
+  /*.description-icon-list {
+    display: flex;
+    align-items: center;
+    background-color: var(--button-portfolio-background-color);
+    justify-content: center;
+    border-radius: 4px;
+    height: 112px;
+    margin-bottom: 8px;
+  }
+
+  .description-icon {
+    fill: var(--header-color);
+  }*/
+
+  /* .header-list {
+    margin-right: auto;
+    display: flex;
+    gap: 40px;
+  }*/
+
+  /* .address-nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }*/
+}
