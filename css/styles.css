@@ -316,6 +316,10 @@ a:focus {
   flex-wrap: wrap;
   gap: 72px;
 }
+
+.team-photo-img {
+  width: 100%;
+}
 .title-name {
   /*padding: 32px 0;*/
   /*text-align: center;*/
