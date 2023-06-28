@@ -118,7 +118,10 @@ a:focus {
   position: relative;
   color: var(--portfolio-button-focus-hover);
 }
-.active::after {
+.mob-header-menu .active {
+  color: var(--portfolio-button-focus-hover);
+}
+/*.active::after {
   position: absolute;
   content: '';
   left: 0;
@@ -127,7 +130,7 @@ a:focus {
   height: 4px;
   border-radius: 2px;
   background-color: var(--portfolio-button-focus-hover);
-}
+}*/
 .address {
   font-style: normal;
   margin-left: auto;
@@ -144,8 +147,8 @@ a:focus {
 }
 
 .hamburger {
-  stroke: none;
-  background-color: transparent;
+  stroke: #2e2f42;
+  background-color: #e7e9fc;
   fill: #2e2f42;
 }
 .hamburger-menu {
@@ -435,12 +438,14 @@ a:focus {
 }
 .footer-logo-container {
   /*margin-right: 120px;*/
-  display: block;
-  justify-content: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .footer-container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 96px 16px;
   gap: 72px;
   justify-content: center;
 }
@@ -484,8 +489,7 @@ a:focus {
 }
 .footer-social-container {
   display: inline-flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -494,6 +498,7 @@ a:focus {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .footer-label {
@@ -507,6 +512,10 @@ a:focus {
 .button-wrap {
   width: 100%;
   margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-email {
@@ -539,7 +548,8 @@ a:focus {
   align-items: center;
 }
 .subscribe-btn {
-  display: block;
+  display: flex;
+  justify-content: center;
   align-items: center;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -556,9 +566,10 @@ a:focus {
   cursor: pointer;
   padding: 0;
   margin-top: 16px;
-  position: absolute;
 }
-
+.label-email-footer {
+  width: 100%;
+}
 .subscribe-icon {
   fill: rgba(255, 255, 255, 1);
   margin-left: 16px;
@@ -668,22 +679,25 @@ a:focus {
 }
 
 .backdrop {
-  width: 100%;
+  width: calc(100% - 30px);
   height: 100%;
   z-index: 999;
   background-color: rgba(46, 47, 66, 0.4);
   position: fixed;
   top: 0;
   transition: opacity var(--transition), visibility var(--transition);
+  overflow-y: scroll;
 }
 
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  width: 408px;
-  min-height: 584px;
+  /*transform: translate(-50%, -50%) scale(1);*/
+  transform: translate(-50%, -10%) scale(1);
+  width: 100%;
+  height: 100%;
+  max-height: 584px;
   background-color: #fcfcfc;
   border-radius: 4px;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -1000,4 +1014,10 @@ a:focus {
   width: 100%;
   height: 100%;
   padding: 8px;
+}
+
+.mob-down {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
