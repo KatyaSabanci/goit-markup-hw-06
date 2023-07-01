@@ -60,7 +60,6 @@ h6 {
   border-bottom: 1px solid #e7e9fc;
   padding: 24px 16px 24px 16px;
   margin: 0 auto;
-  gap: 40px;
   display: flex;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -170,18 +169,6 @@ a:focus {
   background-size: cover;
 }
 
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dpp) {
-  .main-hero {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/office-2x.jpg);
-  }
-}
-
 .hero {
   font-weight: 700;
   font-size: 36px;
@@ -240,7 +227,6 @@ a:focus {
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
-  justify-content: center;
   padding-left: 0;
 }
 
@@ -323,10 +309,9 @@ a:focus {
 .team-photo-img {
   width: 100%;
 }
-.title-name {
+/*.title-name {
   /*padding: 32px 0;*/
-  /*text-align: center;*/
-}
+/*text-align: center;*/
 
 .social-icons-list {
   display: flex;
@@ -377,7 +362,7 @@ a:focus {
 }
 
 .customers {
-  padding: 96px 0 96px;
+  padding: 96px 0 96px 0;
 }
 
 .customer-list {
@@ -696,8 +681,6 @@ a:focus {
   /*transform: translate(-50%, -50%) scale(1);*/
   transform: translate(-50%, -10%) scale(1);
   width: 100%;
-  height: 100%;
-  max-height: 584px;
   background-color: #fcfcfc;
   border-radius: 4px;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -755,6 +738,7 @@ a:focus {
 }
 .input-wrap {
   margin-bottom: 8px;
+  width: 100%;
 }
 
 .input-wrap-comment {
@@ -769,7 +753,6 @@ a:focus {
   height: 40px;
   border-radius: 4px;
   background-color: transparent;
-  width: 360px;
   display: inline-block;
   outline: transparent;
   padding-left: 38px;
@@ -832,7 +815,10 @@ a:focus {
   padding-top: 8px;
   padding-left: 16px;
 }
-
+.modal-btn-hero {
+  width: 169px;
+  height: 56px;
+}
 .policy-class {
   font-size: 12px;
   line-height: 1.17;

@@ -2,6 +2,22 @@
   .container {
     width: 100%;
   }
+
+  .modal {
+    width: calc(100% - 30px);
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dpp) {
+  .main-hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/office-2x.jpg);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -16,33 +32,127 @@
         ),
         url(../images/office-tab-2x.jpg);
     }
+  }
 
-    .header-list {
-  margin-right: auto;
-  display:flex;
+  .container {
+    padding: 16px;
+  }
+  .header-list {
+    margin-right: 0 auto;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+  }
+  .header-container {
+    margin: 0;
+    padding: 0;
+  }
+  .header {
+    padding: 16px;
+  }
+
+  .logo {
+    padding-left: 0;
+    margin-right: 120px;
   }
 
   .address-nav {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+    gap: 12px;
+    padding: 0;
+  }
 
+  .hamburger-menu {
+    display: none;
+  }
+  .description-menu {
+    min-width: 768px;
+    gap: 24px 72px;
+  }
+
+  .description {
+    gap: 72px 24px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .description-features {
+    width: calc((100% - 24px) / 2);
+    padding-left: 0;
+
+  }
+.description-menu .container{
+  margin: 0; 
 }
 
-.hamburger-menu{
-  display: none;
-}
-
-  /*.header-list {
-    margin-right: auto;
+  .team-list {
+    gap: 64px 24px;
     display: flex;
-    gap: 40px;
-  }*/
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .team-container {
+    width: 584px;
+    justify-content: center;
+  }
+  .team-line {
+    width: calc((100% - 24px) / 2);
+    max-width: 264px;
+  }
+  .team-photo-img {
+    width: 100%;
+  }
 
-  /*.address-nav {
+  .customers {
+    padding: 96px 108px 96px 108px;
     display: flex;
-    align-items: center;
-    gap: 40px;
-  }*/
+    justify-content: center;
+  }
+
+  .customer-list {
+    gap: 72px 24px;
+    justify-content: center;
+  }
+
+  .customer-item {
+    height: 88px;
+    width: calc((100% - 48px) / 3);
+  }
+
+  .footer-container {
+    gap: 72px 24px;
+    max-width: 584px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .button-wrap {
+    display: flex;
+    flex-direction: inline-flex;
+  }
+
+  .footer-logo-container {
+    margin-left: 0;
+    align-items: left;
+  }
+  .footer-email {
+    width: 264px;
+  }
+
+  .backdrop {
+    width: calc(100% - 200px);
+    transform: translateX(50%);
+    top: 0;
+    right: 50%;
+  }
+
+  .modal{
+  transform:translate(-50% -50%) scale(1);
+  width: 408px;
 
 }
 
@@ -85,4 +195,3 @@
     align-items: center;
     gap: 40px;
   }*/
-}
