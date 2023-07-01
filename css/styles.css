@@ -120,16 +120,7 @@ a:focus {
 .mob-header-menu .active {
   color: var(--portfolio-button-focus-hover);
 }
-/*.active::after {
-  position: absolute;
-  content: '';
-  left: 0;
-  bottom: -1px;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--portfolio-button-focus-hover);
-}*/
+
 .address {
   font-style: normal;
   margin-left: auto;
@@ -285,10 +276,8 @@ a:focus {
 .team-line {
   background-color: var(--main-background-color);
   border-radius: 0px 0px 4px 4px;
-  /*width: calc((100% - 72px) / 4);*/
   width: 100%;
   height: auto;
-  /*padding-left: 0;*/
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -309,9 +298,6 @@ a:focus {
 .team-photo-img {
   width: 100%;
 }
-/*.title-name {
-  /*padding: 32px 0;*/
-/*text-align: center;*/
 
 .social-icons-list {
   display: flex;
@@ -373,7 +359,6 @@ a:focus {
 
 .customer-item {
   height: 88px;
-  /*width: calc((100% - 120px) / 6);*/
   width: calc((100% - 32px) / 2);
 }
 
@@ -422,7 +407,6 @@ a:focus {
   width: 264px;
 }
 .footer-logo-container {
-  /*margin-right: 120px;*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -435,6 +419,10 @@ a:focus {
   justify-content: center;
 }
 
+.footer {
+  padding-bottom: 96px;
+  padding-top: 96px;
+}
 .social-text {
   font-weight: 500;
   font-size: 16px;
@@ -678,7 +666,6 @@ a:focus {
   position: absolute;
   top: 50%;
   left: 50%;
-  /*transform: translate(-50%, -50%) scale(1);*/
   transform: translate(-50%, -10%) scale(1);
   width: 100%;
   background-color: #fcfcfc;
@@ -914,7 +901,6 @@ a:focus {
   display: flex;
   flex-direction: column;
   overflow: auto;
-  justify-content: space-between;
 }
 
 .mob-menu-x {
@@ -946,7 +932,6 @@ a:focus {
 .mob-menu-div {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   margin-left: 40px;
 }
 
@@ -971,13 +956,12 @@ a:focus {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  margin-left: 40px;
 }
+
 .mob-social-container {
   display: inline-flex;
   flex-direction: row;
   margin-top: 48px;
-  padding-left: 40px;
   padding-bottom: 40px;
 }
 .mob-social-icon {
@@ -1005,5 +989,6 @@ a:focus {
 .mob-down {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  margin-left: 40px;
+  margin-top: auto;
 }
