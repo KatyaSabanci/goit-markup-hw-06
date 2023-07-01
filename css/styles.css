@@ -420,8 +420,7 @@ a:focus {
 }
 
 .footer {
-  padding-bottom: 96px;
-  padding-top: 96px;
+  padding: 9px 0;
 }
 .social-text {
   font-weight: 500;
