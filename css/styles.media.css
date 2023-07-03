@@ -196,6 +196,14 @@
     width: 408px;
     top: 25%;
   }
+
+  .button-list {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -241,6 +249,14 @@
     margin-right: 0;
     gap: 40px;
     padding: 0;
+    font-style: normal;
+  }
+
+  .hero {
+    max-width: 498px;
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 48px;
   }
   .description-icon-list {
     display: flex;
@@ -252,10 +268,17 @@
     margin-bottom: 8px;
   }
 
+  .description .subtitle {
+    text-align: left;
+  }
+
   .description-icon {
     fill: var(--header-color);
   }
-
+  .description-menu {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
   .header-list {
     margin-right: auto;
     display: flex;
@@ -286,6 +309,11 @@
     width: 100%;
   }
 
+  .team-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
   .team-list {
     display: flex;
     flex-wrap: nowrap;
@@ -300,6 +328,7 @@
   }
   .social-icons-list {
     padding-left: 0;
+    margin-bottom: 0;
   }
 
   .customer-list {
@@ -324,12 +353,18 @@
   .footer-container {
     display: flex;
     flex-wrap: nowrap;
+    align-items: baseline;
     gap: unset;
     padding: 0;
-    margin: 0;
+    justify-content: left;
   }
   .footer {
-    padding: 100px 15px;
+    padding: 117.5px 15px 84px 15px;
+    margin-left: 0 auto;
+  }
+
+  .footer-logo-container {
+    margin-right: 120px;
   }
   .footer-social-container {
     display: inline-flex;
@@ -339,7 +374,7 @@
 
   .footer-social-container {
     align-items: unset;
-    margin-left: 120px;
+    margin-left: 0 auto;
   }
   .footer-email {
     width: 264px;
