@@ -148,7 +148,7 @@ a:focus {
 }
 .main-hero {
   background-color: var(--hero-background-color);
-  padding: 188px 0;
+  padding: 112px 0;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -165,7 +165,6 @@ a:focus {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
-  letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
   margin-bottom: 72px;
@@ -201,15 +200,17 @@ a:focus {
 }
 
 .subtitle {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.045em;
   color: var(--header-color);
   margin-bottom: 8px;
   text-align: center;
 }
+
 .text {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -268,10 +269,21 @@ a:focus {
 }
 .subtitle-add {
   text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.025em;
+  color: var(--header-color);
+  margin-bottom: 8px;
 }
 
 .text-add {
   text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
 }
 .team-line {
   background-color: var(--main-background-color);
@@ -405,6 +417,7 @@ a:focus {
   letter-spacing: 0.02em;
   color: var(--footer-text-color);
   width: 264px;
+  font-weight: 400;
 }
 .footer-logo-container {
   display: flex;
@@ -668,7 +681,7 @@ a:focus {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -10%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
   width: 100%;
   background-color: #fcfcfc;
   border-radius: 4px;
@@ -904,21 +917,26 @@ a:focus {
   display: flex;
   flex-direction: column;
   overflow: auto;
+  width: calc(100%-2 * 16px);
+  max-width: 408px;
 }
 
 .mob-menu-x {
   display: block;
   margin-left: auto;
-  border-radius: 24px;
-  border: 1px solid #2e2f42;
-  background-color: var#E7E9FC;
+  border: 1px solid #e7e9fc;
   margin-top: 24px;
   margin-right: 24px;
   margin-bottom: 32px;
+  padding: 0;
+  line-height: 0;
+  border-radius: 24px;
 }
 
 .x-button-mob {
   fill: #2e2f42;
+  background-color: #e7e9fc;
+  margin: 8px;
 }
 
 .mob-header-list {
@@ -926,7 +944,7 @@ a:focus {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.1;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.045em;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -936,6 +954,7 @@ a:focus {
   display: flex;
   flex-direction: column;
   margin-left: 40px;
+  overflow-x: hidden;
 }
 
 .mob-email {
@@ -948,11 +967,12 @@ a:focus {
 }
 
 .mob-phone {
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 700;
   line-height: 1.1;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.0045em;
   font-style: normal;
+  color: #4d5ae5;
 }
 
 .address-nav-mob {
@@ -971,8 +991,11 @@ a:focus {
   display: flex;
   justify-content: center;
   transition: var(--transition);
+  gap: 56px;
+}
+
+.mob-icon-li {
   width: calc((100%-120) / 4);
-  gap: 40px;
 }
 
 .social-link-mob {
