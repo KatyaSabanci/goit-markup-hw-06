@@ -58,7 +58,7 @@ h6 {
   letter-spacing: 0.02em;
   color: var(--header-color);
   border-bottom: 1px solid #e7e9fc;
-  padding: 24px 16px 24px 16px;
+  padding: 0;
   margin: 0 auto;
   display: flex;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -89,6 +89,8 @@ h6 {
   display: flex;
   align-items: center;
   position: relative;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header-container {
   display: flex;
@@ -117,9 +119,6 @@ a:focus {
   position: relative;
   color: var(--portfolio-button-focus-hover);
 }
-.mob-header-menu .active {
-  color: var(--portfolio-button-focus-hover);
-}
 
 .address {
   font-style: normal;
@@ -139,12 +138,12 @@ a:focus {
 
 .hamburger {
   stroke: #2e2f42;
-  background-color: #e7e9fc;
   fill: #2e2f42;
 }
 .hamburger-menu {
-  margin-right: 16px;
+  padding: 0;
   border: none;
+  background: transparent;
 }
 .main-hero {
   background-color: var(--hero-background-color);
@@ -310,7 +309,9 @@ a:focus {
 .team-photo-img {
   width: 100%;
 }
-
+.title-name {
+  padding: 32px 0;
+}
 .social-icons-list {
   display: flex;
   justify-content: center;
@@ -691,7 +692,7 @@ a:focus {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform var(--transition);
   background-color: #fcfcfc;
-  padding: 72px 24px 24px 24px;
+  padding: 72px 16px 24px 16px;
   overflow-y: scroll;
 }
 .modal-btn {
@@ -736,6 +737,8 @@ a:focus {
 .modal-title {
   font-weight: 500;
   text-align: center;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--header-color);
   margin-bottom: 16px;
 }
@@ -912,25 +915,22 @@ a:focus {
   width: 100%;
   height: 100%;
   background-color: #ffffff;
-  top: 0;
   z-index: 2;
+  overflow: auto;
   display: flex;
   flex-direction: column;
-  overflow: auto;
-  width: calc(100%-2 * 16px);
-  max-width: 408px;
+  justify-content: space-between;
 }
 
 .mob-menu-x {
   display: block;
-  margin-left: auto;
   border: 1px solid #e7e9fc;
-  margin-top: 24px;
-  margin-right: 24px;
-  margin-bottom: 32px;
   padding: 0;
   line-height: 0;
   border-radius: 24px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
 }
 
 .x-button-mob {
@@ -940,7 +940,6 @@ a:focus {
 }
 
 .mob-header-list {
-  color: #2e2f42;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.1;
@@ -948,13 +947,21 @@ a:focus {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  padding-top: 80px;
+}
+.mob-header-menu {
+  color: var(--header-color);
+}
+
+.mob-active {
+  color: var(--portfolio-button-focus-hover);
 }
 
 .mob-menu-div {
   display: flex;
   flex-direction: column;
-  margin-left: 40px;
   overflow-x: hidden;
+  padding-left: 40px;
 }
 
 .mob-email {
@@ -967,7 +974,7 @@ a:focus {
 }
 
 .mob-phone {
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: 0.0045em;
@@ -982,16 +989,17 @@ a:focus {
 }
 
 .mob-social-container {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
-  margin-top: 48px;
+  justify-content: space-between;
+  padding-top: 48px;
   padding-bottom: 40px;
 }
 .mob-social-icon {
   display: flex;
   justify-content: center;
   transition: var(--transition);
-  gap: 56px;
+  gap: 40px;
 }
 
 .mob-icon-li {
@@ -1015,6 +1023,6 @@ a:focus {
 .mob-down {
   display: flex;
   flex-direction: column;
-  margin-left: 40px;
-  margin-top: auto;
+  padding-left: 40px;
+  justify-content: space-between;
 }
