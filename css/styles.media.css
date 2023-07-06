@@ -18,6 +18,11 @@
   .mob-phone {
     font-size: 36px;
   }
+
+  .hero {
+    max-width: 320px;
+    font-size: 36px;
+  }
   .mob-social-icon {
     gap: 56px;
   }
@@ -61,10 +66,17 @@
     padding-bottom: 24px;
     padding-top: 24px;
   }
+
+  .h1 {
+    margin: unset;
+  }
   .hero {
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
     line-height: 1.07;
-    letter-spacing: 0.07em;
-    margin-bottom: 36px;
+    letter-spacing: 0.02em;
+    margin-bottom: 35px;
     max-width: 496px;
   }
   .header {
@@ -263,6 +275,9 @@
     background-color: var(--portfolio-button-focus-hover);
   }
 
+  .h1 {
+    margin: unset;
+  }
   .header-container {
     padding: 0;
     margin: 0;
@@ -309,6 +324,7 @@
 
   .hero-container {
     padding: 188px 0 188px;
+    margin: 0 auto;
   }
   .description-icon-list {
     display: flex;
@@ -322,6 +338,11 @@
 
   .description .subtitle {
     text-align: left;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
   }
 
   .description-icon {
